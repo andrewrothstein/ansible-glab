@@ -1,0 +1,13 @@
+---
+# vars file for glab
+glab_os: '{{ glab_os_map[ansible_system] }}'
+glab_arch: '{{ glab_arch_map[ansible_architecture] }}'
+glab_platform: '{{ glab_os }}_{{ glab_arch }}'
+glab_prefix: glab_{{ glab_ver }}_{{ glab_platform }}
+glab_archive: '{{ glab_prefix }}.{{ glab_archive_type | default("tar.gz") }}'
+glab_url: '{{ glab_mirror }}/v{{ glab_ver }}/downloads/{{ glab_archive }}'
+glab_checksum: '{{ glab_checksums[glab_ver][glab_platform] }}'
+glab_tmp_archive: '{{ glab_tmpdir | default("/tmp") }}/{{ glab_archive }}'
+glab_install_dir: '{{ glab_parent_install_dir }}/{{ glab_prefix }}'
+glab_install_exe: '{{ glab_install_dir }}/bin/glab'
+glab_link: '{{ glab_parent_install_dir }}/bin/glab'

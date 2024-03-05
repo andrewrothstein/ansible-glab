@@ -1,0 +1,57 @@
+---
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: Checking for install is {{ glab_install_exe }}
+  become: true
+  changed_when: false
+  ansible.builtin.stat:
+    path: '{{ glab_install_exe }}'
+  register: glab_binary
+- name: Downloading and installing glab
+  when: not glab_binary.stat.exists
+  block:
+    - name: Downloading {{ glab_url }} to {{ glab_tmp_archive }}
+      become: true
+      become_user: root
+      ansible.builtin.get_url:
+        url: '{{ glab_url }}'
+        checksum: '{{ glab_checksum }}'
+        dest: '{{ glab_tmp_archive }}'
+        mode: '644'
+    - name: Mkdir {{ glab_install_dir }}
+      become: true
+      become_user: root
+      ansible.builtin.file:
+        path: '{{ glab_install_dir }}'
+        state: directory
+        mode: '755'
+    - name: Unarchiving {{ glab_tmp_archive }} to {{ glab_install_dir }}
+      become: true
+      become_user: root
+      ansible.builtin.unarchive:
+        remote_src: true
+        src: '{{ glab_tmp_archive }}'
+        dest: '{{ glab_install_dir }}'
+        creates: '{{ glab_install_exe }}'
+  always:
+    - name: Rm -f {{ glab_tmp_archive }}
+      become: true
+      become_user: root
+      ansible.builtin.file:
+        path: '{{ glab_tmp_archive }}'
+        state: absent
+- name: Linking {{ glab_link }} to {{ glab_install_exe }}
+  become: true
+  become_user: root
+  ansible.builtin.file:
+    src: '{{ glab_install_exe }}'
+    dest: '{{ glab_link }}'
+    state: link

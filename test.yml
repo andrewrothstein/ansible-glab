@@ -1,0 +1,14 @@
+---
+- name: Testing andrewrothstein.glab role
+  hosts: all
+  tasks:
+    - name: Installing andrewrothstein.glab
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'glab --version'
+      ansible.builtin.command: glab --version
+      changed_when: false
+      register: 'glab_test_output'
+    - name: Output from 'glab --version'
+      ansible.builtin.debug:
+        msg: '{{ glab_test_output.stdout }}'
