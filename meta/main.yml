@@ -1,12 +1,12 @@
 ---
 galaxy_info:
-  author: 'Andrew Rothstein'
+  author: Andrew Rothstein
+  company: BlackRock
   description: '@TODO document glab goes here'
-  company: 'BlackRock'
   galaxy_tags: []
   license: MIT
-  min_ansible_version: 1.2
-  namespace: 'andrewrothstein'
+  min_ansible_version: '1.2'
+  namespace: andrewrothstein
   platforms:
     - name: Alpine
       versions:
@@ -30,4 +30,4 @@ galaxy_info:
       versions:
         - focal
         - jammy
-  role_name: 'glab'
+  role_name: glab
