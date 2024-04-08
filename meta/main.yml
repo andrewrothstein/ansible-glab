@@ -2,7 +2,7 @@
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
-  description: '@TODO document glab goes here'
+  description: installs the glab cli
   galaxy_tags: []
   license: MIT
   min_ansible_version: '1.2'

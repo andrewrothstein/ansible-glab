@@ -2,7 +2,7 @@ andrewrothstein.glab
 ===========================
 ![Build Status](https://github.com/andrewrothstein/glab/actions/workflows/build.yml/badge.svg)
 
-@TODO document glab goes here
+Installs the gitlab [cli](https://gitlab.com/gitlab-org/cli).
 
 Requirements
 ------------
