@@ -1,6 +1,6 @@
 ---
 # defaults file for glab
-glab_ver: 1.40.0
+glab_ver: 1.41.0
 glab_mirror: https://gitlab.com/gitlab-org/cli/-/releases
 glab_os_map:
   Linux: Linux
@@ -85,3 +85,21 @@ glab_checksums:
     Windows_i386: sha256:9754b8aaa31e7829c048ada05589cbbb3760d2de95b2ba2734001f8c57c4cdf0
     # https://gitlab.com/gitlab-org/cli/-/releases/v1.40.0/downloads/glab_1.40.0_Windows_x86_64.zip
     Windows_x86_64: sha256:96a999016659e0f0b6e15b61479f84a90dfda44c87c78f98163bd951420fe9e8
+  # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/checksums.txt
+  1.41.0:
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_macOS_arm64.tar.gz
+    macOS_arm64: sha256:23c2bd76e597ad412ab0193aa47b55426a1c23a2a7c807dcb0e0766441fe190a
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_macOS_x86_64.tar.gz
+    macOS_x86_64: sha256:18cfa8c457bc0116cb6abc7ec0828ddfe9600eb80d3f447f96fba7b8b6422400
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Linux_armv6.tar.gz
+    Linux_armv6: sha256:8cf620342b2f1c8b348dd79e26c27589047fe3be03868327f1bc68bc8e9c7734
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Linux_arm64.tar.gz
+    Linux_arm64: sha256:5ee5829351a68306e359ff3e6029bb57429eba9a88d7f8add1c6b206ea002267
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Linux_i386.tar.gz
+    Linux_i386: sha256:683745ae13394f95187469cbaffdf2ae7bb82401f555e5add3c2e03f5fef8972
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Linux_x86_64.tar.gz
+    Linux_x86_64: sha256:ff7775b328ec7cad64211a1573597ba8e34b9ef6bc53e0448e1dc174ca14a698
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Windows_i386.zip
+    Windows_i386: sha256:7f31c1d740c91288f120e308b6bf01a28409048c87ab482b6bde1659d3f14062
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.41.0/downloads/glab_1.41.0_Windows_x86_64.zip
+    Windows_x86_64: sha256:31152911ac74f3223d6cdb2f35fdbe25d4738ea03780210a2f393d2706112a94
