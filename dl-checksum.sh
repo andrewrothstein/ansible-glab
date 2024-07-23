@@ -39,4 +39,4 @@ dl_ver () {
     dl $lchecksum $ver Windows x86_64 zip
 }
 
-dl_ver ${1:-1.43.0}
+dl_ver ${1:-1.44.1}
