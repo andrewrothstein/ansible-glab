@@ -1,6 +1,6 @@
 ---
 # defaults file for glab
-glab_ver: 1.45.0
+glab_ver: 1.46.0
 glab_mirror: https://gitlab.com/gitlab-org/cli/-/releases
 glab_os_map:
   Linux: Linux
@@ -175,3 +175,21 @@ glab_checksums:
     Windows_i386: sha256:6dfae20a9d1a2ec6f0d96d2286dcbda31bdf69d61935926020d2f7ae03d91aac
     # https://gitlab.com/gitlab-org/cli/-/releases/v1.45.0/downloads/glab_1.45.0_Windows_x86_64.zip
     Windows_x86_64: sha256:57a9d1fb40feec48bb304d949ea67ada5c0582c8993fd70677279969fa5afa2f
+  # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/checksums.txt
+  1.46.0:
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_macOS_arm64.tar.gz
+    macOS_arm64: sha256:45ab86f7ef075cf62ecfdefc8639f623aa41abe0b3daea3be739231812f2490e
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_macOS_x86_64.tar.gz
+    macOS_x86_64: sha256:b2b0ce02858b3b28e92564f73040444afd6c6dc25996d903907c06d2e2c383ad
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Linux_armv6.tar.gz
+    Linux_armv6: sha256:ac0687487e7efbabc1d9c527b63a173900ee51ca7fd7932e6eec822e0627af6e
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Linux_arm64.tar.gz
+    Linux_arm64: sha256:f0187b37236a94f19b430e85ebe3796ec6e1ef0abf976ddfa84ac72689c865fd
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Linux_i386.tar.gz
+    Linux_i386: sha256:25f2d99934965aa7207483a8afc2c1b7eeb7a496f9e773ef394fd11e4be9ab92
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Linux_x86_64.tar.gz
+    Linux_x86_64: sha256:1e26ca89cf649cd9326b901660417d312aad415ba9aff87271b9b16bb5c8232f
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Windows_i386.zip
+    Windows_i386: sha256:cf400180ca5ea1ff1f6d7a4ea294726658ce7bc5abe357312e07cdcfc99d9e73
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.46.0/downloads/glab_1.46.0_Windows_x86_64.zip
+    Windows_x86_64: sha256:2ddb9a89df8d8b797e25d6408e2685814294d209b4146ed36a27fbb6016cab90
