@@ -29,14 +29,14 @@ dl_ver () {
     fi
 
     printf "  %s:\n" $ver
-    dl $lchecksum $ver macOS arm64
-    dl $lchecksum $ver macOS x86_64
-    dl $lchecksum $ver Linux armv6
-    dl $lchecksum $ver Linux arm64
-    dl $lchecksum $ver Linux i386
-    dl $lchecksum $ver Linux x86_64
-    dl $lchecksum $ver Windows i386 zip
-    dl $lchecksum $ver Windows x86_64 zip
+    dl $lchecksum $ver darwin arm64
+    dl $lchecksum $ver darwin amd64
+    dl $lchecksum $ver linux armv6
+    dl $lchecksum $ver linux arm64
+    dl $lchecksum $ver linux 386
+    dl $lchecksum $ver linux amd64
+    dl $lchecksum $ver windows 386 zip
+    dl $lchecksum $ver windows amd64 zip
 }
 
-dl_ver ${1:-1.46.1}
+dl_ver ${1:-1.47.0}

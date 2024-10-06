@@ -1,6 +1,6 @@
 ---
 # vars file for glab
-glab_os: '{{ glab_os_map[ansible_system] }}'
+glab_os: '{{ ansible_system | lower }}'
 glab_arch: '{{ glab_arch_map[ansible_architecture] }}'
 glab_platform: '{{ glab_os }}_{{ glab_arch }}'
 glab_prefix: glab_{{ glab_ver }}_{{ glab_platform }}
