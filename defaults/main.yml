@@ -1,6 +1,6 @@
 ---
 # defaults file for glab
-glab_ver: 1.53.0
+glab_ver: 1.54.0
 glab_mirror: https://gitlab.com/gitlab-org/cli/-/releases
 glab_arch_map:
   aarch64: arm64
@@ -135,3 +135,21 @@ glab_checksums:
     windows_386: sha256:4d22c2ff62a1efc52fb6477bbb4df1025101235c0f1364817ca5bb9e13a4d3a0
     # https://gitlab.com/gitlab-org/cli/-/releases/v1.53.0/downloads/glab_1.53.0_windows_amd64.zip
     windows_amd64: sha256:68fd28f6cf2ae690dc9527464c1ece2346e432bae2afb2b2df910e62edf0f9c1
+  # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/checksums.txt
+  1.54.0:
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_darwin_arm64.tar.gz
+    darwin_arm64: sha256:12025e4075eb45d7cb05df8ce5c40734f9ebbc3769c582261ea77f5a27ec8065
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_darwin_amd64.tar.gz
+    darwin_amd64: sha256:d4d46b055671914d36aac2a5426262f3b0420fd9baa91b75792ba686979110a8
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_linux_armv6.tar.gz
+    linux_armv6: sha256:64e32de83188431b90854b169f1a458246d016061c58113c85a63e2d6a354b2f
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_linux_arm64.tar.gz
+    linux_arm64: sha256:fcf6b86a7124951e29611d186da6a5b3126de33057e1d32792d2666f0b15be18
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_linux_386.tar.gz
+    linux_386: sha256:9ceb651a05d6feda3798e8db81d72ff8cee5a35f6622dcd8bb0c9ad3e979ce8e
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_linux_amd64.tar.gz
+    linux_amd64: sha256:42b75f3d7a030f2d4fd59d6e77ad876d21a99d65a4f0d6d61f277245d754c6f8
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_windows_386.zip
+    windows_386: sha256:f48d9b2722e11ed4e9436ddaaf9366d401ac3751f448632e7c6471ec3a878f4d
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.54.0/downloads/glab_1.54.0_windows_amd64.zip
+    windows_amd64: sha256:3240b89b1e1441d6de341d50455decc4ae39bc37aa3795aac45e738d696e27f5
