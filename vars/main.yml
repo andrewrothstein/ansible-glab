@@ -1,7 +1,7 @@
 ---
 # vars file for glab
-glab_os: '{{ ansible_system | lower }}'
-glab_arch: '{{ glab_arch_map[ansible_architecture] }}'
+glab_os: '{{ ansible_facts["system"] | lower }}'
+glab_arch: '{{ glab_arch_map[ansible_facts["architecture"]] }}'
 glab_platform: '{{ glab_os }}_{{ glab_arch }}'
 glab_prefix: glab_{{ glab_ver }}_{{ glab_platform }}
 glab_archive: '{{ glab_prefix }}.{{ glab_archive_type | default("tar.gz") }}'
