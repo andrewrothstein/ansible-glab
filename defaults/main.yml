@@ -1,6 +1,6 @@
 ---
 # defaults file for glab
-glab_ver: 1.131.0
+glab_ver: 1.133.0
 glab_mirror: https://gitlab.com/gitlab-org/cli/-/releases
 glab_arch_map:
   aarch64: arm64
@@ -1863,3 +1863,39 @@ glab_checksums:
     windows_386: sha256:d805cd7c843704cd4636d3cd2072931b63d2150e959f35ab5073441fe897325e
     # https://gitlab.com/gitlab-org/cli/-/releases/v1.131.0/downloads/glab_1.131.0_windows_amd64.zip
     windows_amd64: sha256:225bfd870f7e8bcb3cc7ebaedc18d161d3470ddd4565cebe41d08604fe197d15
+  # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/checksums.txt
+  1.132.0:
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_darwin_arm64.tar.gz
+    darwin_arm64: sha256:1b147997356ec2301fe4d08ce97c945d0c0a3de77fec99806d13681401c00cc2
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_darwin_amd64.tar.gz
+    darwin_amd64: sha256:5d6857b4b7d666e8b6c025c2f0678db1cfa1e1473d50d2c576713fa6840963a1
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_linux_armv6.tar.gz
+    linux_armv6: sha256:bd766fad44eb0f7251a758b3ae8659159ed24dac7f9e8b2eb9d10f15acd6b490
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_linux_arm64.tar.gz
+    linux_arm64: sha256:f4927afddb294ca922212a9d9dc398b729f1e567f7a81a545c179dd7d38da68e
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_linux_386.tar.gz
+    linux_386: sha256:47ac105a5aeaf93c74aed15a6ca0c37b8e06fd9d585491e6edc85214e0a16dbf
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_linux_amd64.tar.gz
+    linux_amd64: sha256:24d654844cae9f8f24193219ad481a4ebf01c1dc7340ea4107ee2bedd93f9e53
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_windows_386.zip
+    windows_386: sha256:c1d18f457069888ec876ebd10a8de2f36bd9e9135c84edd97ec00de2209c8a0c
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.132.0/downloads/glab_1.132.0_windows_amd64.zip
+    windows_amd64: sha256:aab0fa7adfd30c95452aeca06fa488690bb2d5c62f34bd996adc0af879c2238e
+  # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/checksums.txt
+  1.133.0:
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_darwin_arm64.tar.gz
+    darwin_arm64: sha256:d81ed2620b0d1374e2e0a8bfd90a3ef8945d177667d065a0945b301a1eada3e2
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_darwin_amd64.tar.gz
+    darwin_amd64: sha256:62965e8361ce8ad52a5d6079f8ff155f9e3bc8bc4fb74e4c8e9c75d67043d803
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_linux_armv6.tar.gz
+    linux_armv6: sha256:a7a13a8e87f53c8c8152a5f40606a1f606b19fa110ece7c75c851a4cfcb31de2
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_linux_arm64.tar.gz
+    linux_arm64: sha256:a529fd254824b0f3f8d2350080c9b46633b67ff3e2b11455836d7a680c498b09
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_linux_386.tar.gz
+    linux_386: sha256:93fb98ab952d1e83a5decc6e221ef7bdc99e018497bcc2e728733e98f3ab3bc2
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_linux_amd64.tar.gz
+    linux_amd64: sha256:b17f858b8d700f1607f8ec02fe092a455da6a8dd18dac3eb6ccb09db1befd4bf
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_windows_386.zip
+    windows_386: sha256:d61d312aba91900f9d9c66ec6f78361c7ba90c242f431428c022213c07a99a93
+    # https://gitlab.com/gitlab-org/cli/-/releases/v1.133.0/downloads/glab_1.133.0_windows_amd64.zip
+    windows_amd64: sha256:0e8788d3d2f19e54745dae03a254d2b6726ecc033a6977e3b04e895ce8a48a0a
